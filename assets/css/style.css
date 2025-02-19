@@ -1,0 +1,170 @@
+/* reset gearl */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+p{
+  margin: 0;
+}
+
+
+/* Cabeçalho */
+.container-autor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px 0;
+}
+.container-autor p{
+  color: #484747;
+}
+#nomeAutor{
+  font-family: "Courgette", serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #484747;
+  /* box-shadow: 0 2px 18px 0 rgba(129, 162, 182, .5); */
+}
+.dev-junior{
+  text-align: center;
+}
+#menuHamburguer a{
+  font-family: "Jura", serif;
+  font-weight: 600;
+}
+#menuHamburguer a:hover{
+  color: #BB5A3A;
+}
+
+/* Boas vindas */
+.boasVindas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1E3E56;
+  text-align: center;
+  padding: 12px 5px;
+  color: #F6F5FD;
+}
+.boasVindas img{
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* Projetos */
+.projects{
+  margin-bottom: 12px;
+}
+.projects h3{
+  padding: 12px 5px;
+}
+
+#flex-container{
+  gap: 10px;
+}
+
+#project-item{
+  color: #F6F5FD;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/image-background-768px.avif);
+  transition: .5s;
+  box-shadow: 0 2px 18px 0 rgba(129, 162, 182, .5);
+}
+#project-item h4{
+  color: #E7DFD0;
+}
+#project-item strong{
+  color: #7AACB5;
+}
+#project-item p{
+  margin-bottom: 6px;
+}
+
+#project-item a{
+  margin-top: auto;
+  text-decoration: none;
+  border: 2px solid #f5f5f5;
+  padding: 6px 3px;
+  width: 112px;
+  max-width: 100%;
+  transition: .5s;
+  background-color: #fff;
+  color: #163446;
+}
+#project-item:hover{
+  cursor: pointer;
+  background-image: url(../img/image-background-02-edit.avif);
+}
+
+#project-item a:hover{
+  background-color: transparent;
+  color: #fff;
+}
+
+
+/* Contato */
+form input, form textarea, form button {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+}
+form button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact{
+  margin-bottom: 12px;
+}
+
+.contact input{
+  border: 2px solid #AABFA4;
+  border-radius: 0%;
+}
+
+/* Rodapé */
+.rodape{
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #150C0F;
+  gap:8px;
+} 
+.rodape p{
+  margin: 0;
+  color: #484747;
+  font-weight: 500;
+}
+
+.whatsap img{
+  width: 30px;
+}
+
+
+@media(max-width:575px){
+  #flex-container{
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  #project-item a{
+    width: 40%;
+  }
+  #espacamentoMenu button{
+    margin-bottom: 6px;
+  }
+}
+
+@media(max-width:320px){
+  .rodape{
+    flex-direction: column-reverse;
+  }
+}
